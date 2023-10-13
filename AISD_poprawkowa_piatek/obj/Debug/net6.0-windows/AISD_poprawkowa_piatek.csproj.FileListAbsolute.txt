@@ -1,0 +1,17 @@
+D:\aisd\AISD_poprawkowa_piatek\bin\Debug\net6.0-windows\AISD_poprawkowa_piatek.exe
+D:\aisd\AISD_poprawkowa_piatek\bin\Debug\net6.0-windows\AISD_poprawkowa_piatek.deps.json
+D:\aisd\AISD_poprawkowa_piatek\bin\Debug\net6.0-windows\AISD_poprawkowa_piatek.runtimeconfig.json
+D:\aisd\AISD_poprawkowa_piatek\bin\Debug\net6.0-windows\AISD_poprawkowa_piatek.dll
+D:\aisd\AISD_poprawkowa_piatek\bin\Debug\net6.0-windows\AISD_poprawkowa_piatek.pdb
+D:\aisd\AISD_poprawkowa_piatek\obj\Debug\net6.0-windows\AISD_poprawkowa_piatek.csproj.AssemblyReference.cache
+D:\aisd\AISD_poprawkowa_piatek\obj\Debug\net6.0-windows\AISD_poprawkowa_piatek.Form1.resources
+D:\aisd\AISD_poprawkowa_piatek\obj\Debug\net6.0-windows\AISD_poprawkowa_piatek.csproj.GenerateResource.cache
+D:\aisd\AISD_poprawkowa_piatek\obj\Debug\net6.0-windows\AISD_poprawkowa_piatek.GeneratedMSBuildEditorConfig.editorconfig
+D:\aisd\AISD_poprawkowa_piatek\obj\Debug\net6.0-windows\AISD_poprawkowa_piatek.AssemblyInfoInputs.cache
+D:\aisd\AISD_poprawkowa_piatek\obj\Debug\net6.0-windows\AISD_poprawkowa_piatek.AssemblyInfo.cs
+D:\aisd\AISD_poprawkowa_piatek\obj\Debug\net6.0-windows\AISD_poprawkowa_piatek.csproj.CoreCompileInputs.cache
+D:\aisd\AISD_poprawkowa_piatek\obj\Debug\net6.0-windows\AISD_poprawkowa_piatek.dll
+D:\aisd\AISD_poprawkowa_piatek\obj\Debug\net6.0-windows\refint\AISD_poprawkowa_piatek.dll
+D:\aisd\AISD_poprawkowa_piatek\obj\Debug\net6.0-windows\AISD_poprawkowa_piatek.pdb
+D:\aisd\AISD_poprawkowa_piatek\obj\Debug\net6.0-windows\AISD_poprawkowa_piatek.genruntimeconfig.cache
+D:\aisd\AISD_poprawkowa_piatek\obj\Debug\net6.0-windows\ref\AISD_poprawkowa_piatek.dll
