@@ -67,7 +67,7 @@ namespace AISD_poprawkowa_piatek
 
         }
 
-        int sortowanieB(int[] tab)
+        int[] sortowanieB(int[] tab)
         {
             int tmp;
             bool zamiana;
