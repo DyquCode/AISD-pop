@@ -62,21 +62,30 @@ namespace AISD_poprawkowa_piatek
             sortowanieB(tablica);
 
             MessageBox.Show(tablica.ToString());
+
         }
 
         void sortowanieB(int[] tab)
         {
             int tmp;
+            bool zamiana;
 
-            for (int i = 0; i < tab.Length - 1; i++)
+            do
             {
-                if (tab[i] > tab[i + 1])
+                zamiana = false;
+
+                for (int i = 0; i < tab.Length - 1; i++)
                 {
-                    tmp = tab[i];
-                    tab[i] = tab[i + 1];
-                    tab[i + 1] = tmp;
+                    if (tab[i] > tab[i + 1])
+                    {
+                        tmp = tab[i];
+                        tab[i] = tab[i + 1];
+                        tab[i + 1] = tmp;
+                        zamiana = true;
+                    }
                 }
             }
+            while (zamiana);
         }
     }
 }
