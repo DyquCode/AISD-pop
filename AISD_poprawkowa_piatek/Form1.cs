@@ -1,3 +1,5 @@
+using System.Reflection.Metadata.Ecma335;
+
 namespace AISD_poprawkowa_piatek
 {
     public partial class Form1 : Form
@@ -61,11 +63,11 @@ namespace AISD_poprawkowa_piatek
 
             sortowanieB(tablica);
 
-            MessageBox.Show(tablica.ToString());
+
 
         }
 
-        void sortowanieB(int[] tab)
+        int sortowanieB(int[] tab)
         {
             int tmp;
             bool zamiana;
@@ -86,6 +88,8 @@ namespace AISD_poprawkowa_piatek
                 }
             }
             while (zamiana);
+
+            return tab;
         }
     }
 }
