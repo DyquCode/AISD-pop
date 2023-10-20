@@ -31,6 +31,7 @@
             this.btnstart = new System.Windows.Forms.Button();
             this.nudliczban = new System.Windows.Forms.NumericUpDown();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnsort = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudliczban)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,11 +53,22 @@
             this.nudliczban.TabIndex = 1;
             this.nudliczban.ValueChanged += new System.EventHandler(this.nudliczban_ValueChanged);
             // 
+            // btnsort
+            // 
+            this.btnsort.Location = new System.Drawing.Point(555, 382);
+            this.btnsort.Name = "btnsort";
+            this.btnsort.Size = new System.Drawing.Size(106, 56);
+            this.btnsort.TabIndex = 2;
+            this.btnsort.Text = "Sortowanie";
+            this.btnsort.UseVisualStyleBackColor = true;
+            this.btnsort.Click += new System.EventHandler(this.btnsort_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(803, 447);
+            this.Controls.Add(this.btnsort);
             this.Controls.Add(this.nudliczban);
             this.Controls.Add(this.btnstart);
             this.Name = "Form1";
@@ -71,5 +83,6 @@
         private Button btnstart;
         private NumericUpDown nudliczban;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Button btnsort;
     }
 }
