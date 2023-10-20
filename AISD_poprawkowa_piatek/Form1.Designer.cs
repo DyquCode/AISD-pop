@@ -30,6 +30,7 @@
         {
             this.btnstart = new System.Windows.Forms.Button();
             this.nudliczban = new System.Windows.Forms.NumericUpDown();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.nudliczban)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,5 +70,6 @@
 
         private Button btnstart;
         private NumericUpDown nudliczban;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
