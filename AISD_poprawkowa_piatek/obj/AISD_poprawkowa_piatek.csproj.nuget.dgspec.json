@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\aisd\\AISD_poprawkowa_piatek\\AISD_poprawkowa_piatek.csproj": {}
+    "D:\\UWM\\AISD_poprawkowa_piatek\\AISD_poprawkowa_piatek.csproj": {}
   },
   "projects": {
-    "D:\\aisd\\AISD_poprawkowa_piatek\\AISD_poprawkowa_piatek.csproj": {
+    "D:\\UWM\\AISD_poprawkowa_piatek\\AISD_poprawkowa_piatek.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\aisd\\AISD_poprawkowa_piatek\\AISD_poprawkowa_piatek.csproj",
+        "projectUniqueName": "D:\\UWM\\AISD_poprawkowa_piatek\\AISD_poprawkowa_piatek.csproj",
         "projectName": "AISD_poprawkowa_piatek",
-        "projectPath": "D:\\aisd\\AISD_poprawkowa_piatek\\AISD_poprawkowa_piatek.csproj",
-        "packagesPath": "C:\\Users\\local\\.nuget\\packages\\",
-        "outputPath": "D:\\aisd\\AISD_poprawkowa_piatek\\obj\\",
+        "projectPath": "D:\\UWM\\AISD_poprawkowa_piatek\\AISD_poprawkowa_piatek.csproj",
+        "packagesPath": "C:\\Users\\b-dyk\\.nuget\\packages\\",
+        "outputPath": "D:\\UWM\\AISD_poprawkowa_piatek\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\local\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\b-dyk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

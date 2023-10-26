@@ -18,7 +18,7 @@ namespace AISD_poprawkowa_piatek
             MessageBox.Show(wynik.ToString());
         }
 
-        
+
         int fib(int n)
         {
             if (n == 0)
@@ -41,7 +41,7 @@ namespace AISD_poprawkowa_piatek
             wyrazy[0] = 0;
             wyrazy[1] = 1;
 
-            for(int i=2; i<wyrazy.Length; i++)
+            for (int i = 2; i < wyrazy.Length; i++)
             {
                 wyrazy[i] = wyrazy[i - 1] + wyrazy[i - 2];
             }
@@ -59,12 +59,23 @@ namespace AISD_poprawkowa_piatek
 
         private void btnsort_Click(object sender, EventArgs e)
         {
-            int[] tablica = {3, 2, 1, 4, 5};
+            int[] tablica = { 3, 2, 1, 4, 5 };
 
+            string tablicaPrzed = "Przed: ";
+            string tablicaPo = "Po: ";
+
+            foreach (int liczba in tablica)
+            {
+                tablicaPrzed += liczba.ToString() + ", ";
+            }
             sortowanieB(tablica);
 
+            foreach (int liczba in tablica)
+            {
+                tablicaPo += liczba.ToString() + ", ";
+            }
 
-
+            MessageBox.Show(tablicaPrzed + "\n" + tablicaPo);
         }
 
         int[] sortowanieB(int[] tab)
@@ -90,6 +101,48 @@ namespace AISD_poprawkowa_piatek
             while (zamiana);
 
             return tab;
+        }
+
+        int[] sortowanieSwap(int[] tab)
+        {
+            for(int i=0; i<tab.Length; i++)
+            {
+                int minIndex = i;
+
+                for(int j=i+1;j<tab.Length; j++)
+                {
+                    if (tab[j] < tab[minIndex])
+                    {
+                        minIndex = j;
+                    }
+                }
+                int temp = tab[i];
+                tab[i] = tab[minIndex];
+                tab[minIndex] = temp;
+            }
+
+            return tab;
+        }
+
+        private void btn_selectsort_Click(object sender, EventArgs e)
+        {
+            int[] tablica = { 5, 2, 1, 1, 5 };
+
+            string tablicaPrzed = "Przed: ";
+            string tablicaPo = "Po: ";
+
+            foreach (int liczba in tablica)
+            {
+                tablicaPrzed += liczba.ToString() + ", ";
+            }
+            sortowanieB(tablica);
+
+            foreach (int liczba in tablica)
+            {
+                tablicaPo += liczba.ToString() + ", ";
+            }
+
+            MessageBox.Show(tablicaPrzed + "\n" + tablicaPo);
         }
     }
 }
