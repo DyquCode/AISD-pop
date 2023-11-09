@@ -1,0 +1,10 @@
+D:\UWM\AISD_projekt\Projekt1\Projekt1\bin\Debug\Projekt1.exe.config
+D:\UWM\AISD_projekt\Projekt1\Projekt1\bin\Debug\Projekt1.exe
+D:\UWM\AISD_projekt\Projekt1\Projekt1\bin\Debug\Projekt1.pdb
+D:\UWM\AISD_projekt\Projekt1\Projekt1\obj\Debug\Projekt1.csproj.AssemblyReference.cache
+D:\UWM\AISD_projekt\Projekt1\Projekt1\obj\Debug\Projekt1.Form1.resources
+D:\UWM\AISD_projekt\Projekt1\Projekt1\obj\Debug\Projekt1.Properties.Resources.resources
+D:\UWM\AISD_projekt\Projekt1\Projekt1\obj\Debug\Projekt1.csproj.GenerateResource.cache
+D:\UWM\AISD_projekt\Projekt1\Projekt1\obj\Debug\Projekt1.csproj.CoreCompileInputs.cache
+D:\UWM\AISD_projekt\Projekt1\Projekt1\obj\Debug\Projekt1.exe
+D:\UWM\AISD_projekt\Projekt1\Projekt1\obj\Debug\Projekt1.pdb
