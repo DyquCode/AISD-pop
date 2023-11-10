@@ -12,6 +12,7 @@ namespace grafy
 {
     public partial class Form1 : Form
     {
+        String napis;
         public Form1()
         {
             InitializeComponent();
@@ -33,12 +34,14 @@ namespace grafy
             w2.dzieci.Add(w5);
             w2.dzieci.Add(w6);
 
+            napis = "";
             A(w1);
+            MessageBox.Show(napis);
         }
 
         void A(Wezel w)
         {
-            MessageBox.Show(w.wartosc.ToString());
+            napis += w.wartosc.ToString() + ", ";
             foreach (var dziecko in w.dzieci)
                 A(dziecko);
         }
