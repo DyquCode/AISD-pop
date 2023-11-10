@@ -71,13 +71,14 @@ namespace Projekt1
             {
                 MessageBox.Show("Wprowadź tablicę liczb przed próbą sortowania.");
             }
-
             sortingInProgress = false;
+
             stopwatch.Stop();
 
             TimeSpan elapsed = stopwatch.Elapsed;
 
-            label_czas.Text = "Czas: " + elapsed.TotalMilliseconds.ToString() + " ms";
+            label_czas.Text = "Czas: " + elapsed.TotalSeconds.ToString() + " s";
+
         }
 
         private void btn_ss_Click(object sender, EventArgs e)
@@ -108,7 +109,7 @@ namespace Projekt1
 
             TimeSpan elapsed = stopwatch.Elapsed;
 
-            label_czas.Text = "Czas: " + elapsed.TotalMilliseconds.ToString() + " ms";
+            label_czas.Text = "Czas: " + elapsed.TotalSeconds.ToString() + " s";
         }
 
         private void btn_si_Click(object sender, EventArgs e)
@@ -139,7 +140,7 @@ namespace Projekt1
 
             TimeSpan elapsed = stopwatch.Elapsed;
 
-            label_czas.Text = "Czas: " + elapsed.TotalMilliseconds.ToString() + " ms";
+            label_czas.Text = "Czas: " + elapsed.TotalSeconds.ToString() + " s";
         }
 
         private void btn_sm_Click(object sender, EventArgs e)
@@ -170,7 +171,7 @@ namespace Projekt1
 
             TimeSpan elapsed = stopwatch.Elapsed;
 
-            label_czas.Text = "Czas: " + elapsed.TotalMilliseconds.ToString() + " ms";
+            label_czas.Text = "Czas: " + elapsed.TotalSeconds.ToString() + " s";
         }
 
         private void btn_sq_Click(object sender, EventArgs e)
@@ -201,7 +202,7 @@ namespace Projekt1
 
             TimeSpan elapsed = stopwatch.Elapsed;
 
-            label_czas.Text = "Czas: " + elapsed.TotalMilliseconds.ToString() + " ms";
+            label_czas.Text = "Czas: " + elapsed.TotalSeconds.ToString() + " s";
         }
 
         private void btn_generuj_Click(object sender, EventArgs e)
