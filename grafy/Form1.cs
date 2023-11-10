@@ -39,7 +39,8 @@ namespace grafy
         void A(Wezel w)
         {
             MessageBox.Show(w.wartosc.ToString());
-            A(w.dzieci.wartosc);
+            foreach (var dziecko in w.dzieci)
+                A(dziecko);
         }
     }
 }
