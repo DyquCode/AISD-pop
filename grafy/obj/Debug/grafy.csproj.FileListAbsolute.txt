@@ -9,3 +9,14 @@ D:\aisd\grafy\obj\Debug\grafy.csproj.GenerateResource.cache
 D:\aisd\grafy\obj\Debug\grafy.csproj.CoreCompileInputs.cache
 D:\aisd\grafy\obj\Debug\grafy.exe
 D:\aisd\grafy\obj\Debug\grafy.pdb
+D:\grafy\bin\Debug\grafy.exe.config
+D:\grafy\bin\Debug\grafy.exe
+D:\grafy\bin\Debug\grafy.pdb
+D:\grafy\obj\Debug\grafy.csproj.AssemblyReference.cache
+D:\grafy\obj\Debug\grafy.csproj.SuggestedBindingRedirects.cache
+D:\grafy\obj\Debug\grafy.Form1.resources
+D:\grafy\obj\Debug\grafy.Properties.Resources.resources
+D:\grafy\obj\Debug\grafy.csproj.GenerateResource.cache
+D:\grafy\obj\Debug\grafy.csproj.CoreCompileInputs.cache
+D:\grafy\obj\Debug\grafy.exe
+D:\grafy\obj\Debug\grafy.pdb
