@@ -27,12 +27,6 @@ namespace grafy
             var w = this.korzen;
             while (w != null)
             {
-                if ((w.leweDziecko != null && w.leweDziecko.wartosc == liczba) ||
-                    (w.praweDziecko != null && w.praweDziecko.wartosc == liczba))
-                {
-                    return w;
-                }
-
                 if (liczba < w.wartosc)
                 {
                     w = w.leweDziecko;
