@@ -97,5 +97,3 @@ namespace grafy
         }
     }
 }
-
-//BFS do domu
