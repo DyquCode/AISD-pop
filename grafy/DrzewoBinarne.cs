@@ -53,17 +53,17 @@ namespace grafy
 
         Wezel3 Znajdz(int liczba)
         {
-
+            //W oparciu o ZnajdzRodzic, jeżeli jest równe
         }
 
         Wezel3 ZnajdzMin(Wezel3 w)
         {
-
+            //Tak długo w dół dopóki leweDziekco nie jest null'em
         }
 
         Wezel3 ZnajdzMax(Wezel3 w)
         {
-
+            //Tak długo w dół dopóki praweDziekco nie jest null'em
         }
 
         Wezel3 Nastepnik(Wezel3 w)
