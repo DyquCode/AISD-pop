@@ -53,30 +53,73 @@ namespace grafy
 
         Wezel3 Znajdz(int liczba)
         {
-            //W oparciu o ZnajdzRodzic, jeżeli jest równe
+            var w = this.korzen;
+            while (w != null)
+            {
+                if (liczba == w.wartosc)
+                {
+                    return w;
+                }
+                else if (liczba < w.wartosc)
+                {
+                    w = w.leweDziecko;
+                }
+                else
+                {
+                    w = w.praweDziecko;
+                }
+            }
+            return null;
         }
 
         Wezel3 ZnajdzMin(Wezel3 w)
         {
-            //Tak długo w dół dopóki leweDziekco nie jest null'em
+            while (w.leweDziecko != null)
+            {
+                w = w.leweDziecko;
+            }
+            return w;
         }
 
         Wezel3 ZnajdzMax(Wezel3 w)
         {
-            //Tak długo w dół dopóki praweDziekco nie jest null'em
+            while (w.praweDziecko != null)
+            {
+                w = w.praweDziecko;
+            }
+            return w;
         }
 
         Wezel3 Nastepnik(Wezel3 w)
         {
-            //Wartosc wieksza, albo przynajmniej nie mniejsza
-            //a) Jeżeli jest prawe dziecko, to ZnajdzMin(w.praweDziecko) <- następnik
-            //b) Jeżeli nie ma prawego dziecka, to idź do góry, tak długo, aż wyjdziesz w rodziców jako leweDziecko, Nastepnik to rodzic w którym wyszedłeś.
-            //C) Jeżeli nie ma prawego dziecka i nie zachodzi (b) i nie mogę iść w górę, to nie ma następnika.
+            if (w.praweDziecko != null)
+            {
+                return ZnajdzMin(w.praweDziecko);
+            }
+
+            Wezel3 rodzic = w.rodzic;
+            while (rodzic != null && w == rodzic.praweDziecko)
+            {
+                w = rodzic;
+                rodzic = rodzic.rodzic;
+            }
+            return rodzic;
         }
 
         Wezel3 Poprzednik(Wezel3 w)
         {
+            if (w.leweDziecko != null)
+            {
+                return ZnajdzMax(w.leweDziecko);
+            }
 
+            Wezel3 rodzic = w.rodzic;
+            while (rodzic != null && w == rodzic.leweDziecko)
+            {
+                w = rodzic;
+                rodzic = rodzic.rodzic;
+            }
+            return rodzic;
         }
     }
 }

@@ -94,6 +94,8 @@ namespace grafy
         private void binaryTree_btn_Click(object sender, EventArgs e)
         {
             DrzewoBinarne d1 = new DrzewoBinarne(5);
+
+            d1.Add(3);
         }
     }
 }
