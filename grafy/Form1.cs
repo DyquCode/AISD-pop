@@ -93,9 +93,27 @@ namespace grafy
 
         private void binaryTree_btn_Click(object sender, EventArgs e)
         {
-            DrzewoBinarne d1 = new DrzewoBinarne(5);
+            var d = new DrzewoBinarne(5);
 
-            d1.Add(3);
+            d.Add(4);
+            d.Add(8);
+            d.Add(7);
+            d.Add(6);
+            d.Add(9);
+            d.Add(7);
+            d.Add(1);
+            d.Add(4);
+            d.Add(3);
+            d.Add(6);
+            d.Add(2);
+            d.Add(2);
+
+            var w = d.ZnajdzMin(d.korzen);
+            while(w != null)
+            {
+                MessageBox.Show(w.wartosc.ToString());
+                w = d.Nastepnik(w);
+            }
         }
     }
 }

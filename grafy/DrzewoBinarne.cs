@@ -51,7 +51,7 @@ namespace grafy
             }
         }
 
-        Wezel3 Znajdz(int liczba)
+        public Wezel3 Znajdz(int liczba)
         {
             var w = this.korzen;
             while (w != null)
@@ -72,7 +72,7 @@ namespace grafy
             return null;
         }
 
-        Wezel3 ZnajdzMin(Wezel3 w)
+        public Wezel3 ZnajdzMin(Wezel3 w)
         {
             while (w.leweDziecko != null)
             {
@@ -81,7 +81,7 @@ namespace grafy
             return w;
         }
 
-        Wezel3 ZnajdzMax(Wezel3 w)
+        public Wezel3 ZnajdzMax(Wezel3 w)
         {
             while (w.praweDziecko != null)
             {
@@ -90,7 +90,7 @@ namespace grafy
             return w;
         }
 
-        Wezel3 Nastepnik(Wezel3 w)
+        public Wezel3 Nastepnik(Wezel3 w)
         {
             if (w.praweDziecko != null)
             {
@@ -106,7 +106,21 @@ namespace grafy
             return rodzic;
         }
 
-        Wezel3 Poprzednik(Wezel3 w)
+        public Wezel3 Nastepnik2(Wezel3 w)
+        {
+            if (w.praweDziecko != null)
+                return ZnajdzMin(w.praweDziecko);
+
+            while(w.rodzic != null)
+            {
+                if (w.rodzic.leweDziecko == w)
+                    return w.rodzic;
+                w = w.rodzic;
+            }
+            return null;
+        }
+
+        public Wezel3 Poprzednik(Wezel3 w)
         {
             if (w.leweDziecko != null)
             {
