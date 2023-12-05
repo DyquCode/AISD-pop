@@ -135,5 +135,12 @@ namespace grafy
             }
             return rodzic;
         }
+
+        public Wezel3 Usun(Wezel3 w)
+        {
+            //Jeżeli nie ma dzieci, to usuwamy;
+            //Jeżeli ma 1 dziecko, to dziecko wchodzi na miejsce usuwanej wartości (Zamieniamy w z dzieckiem)
+            //Jeżeli ma 2 dzieci, to rekurencyjnie losujemy poprzednik albo następnik (tylko poprzedniki, albo następniki)
+        }
     }
 }

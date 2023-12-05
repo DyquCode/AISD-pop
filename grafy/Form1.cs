@@ -108,10 +108,12 @@ namespace grafy
             d.Add(2);
             d.Add(2);
 
+            int i = 1;
             var w = d.ZnajdzMin(d.korzen);
             while(w != null)
             {
-                MessageBox.Show(w.wartosc.ToString());
+                MessageBox.Show(i + ": " + w.wartosc.ToString());
+                i++;
                 w = d.Nastepnik(w);
             }
         }
