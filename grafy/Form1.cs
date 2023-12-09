@@ -110,7 +110,12 @@ namespace grafy
 
             int i = 1;
             var w = d.ZnajdzMin(d.korzen);
-            while(w != null)
+
+            var u = d.Znajdz(3);
+
+            d.Usun(u);
+
+            while (w != null)
             {
                 MessageBox.Show(i + ": " + w.wartosc.ToString());
                 i++;
