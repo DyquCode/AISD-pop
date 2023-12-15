@@ -144,6 +144,10 @@ namespace grafy
         {
             var zamiennik = this.Nastepnik(w);
             zamiennik = this.Usun(zamiennik);
+
+            //przewiązywanie
+
+            return w;
         }
 
         private Wezel3 UsunGdy1(Wezel3 w)
