@@ -29,10 +29,11 @@ namespace grafy
             {
                 if (liczba < w.wartosc)
                 {
-                    if(w.leweDziecko == null)
+                    if (w.leweDziecko == null)
                     {
                         return w;
-                    }else
+                    }
+                    else
                     {
                         w = w.leweDziecko;
                     }
@@ -122,59 +123,71 @@ namespace grafy
             return rodzic;
         }
 
-        public Wezel3 Usun(Wezel3 w)
+        Wezel3 Usun(Wezel3 w)
         {
-            if (w.leweDziecko == null && w.praweDziecko == null)
+            switch(w.getLiczbaDzieci())
             {
-                if (w.rodzic == null)
-                {
-                    korzen = null;
-                }
-                else if (w.rodzic.leweDziecko == w)
-                {
-                    w.rodzic.leweDziecko = null;
-                }
-                else
-                {
-                    w.rodzic.praweDziecko = null;
-                }
+                case 0:
+                    w = this.UsunGdy0(w);
+                    break;
+                case 1:
+                    w = this.UsunGdy1(w);
+                    break;
+                case 2:
+                    w = this.UsunGdy2(w);
+                    break;
             }
-            else if (w.leweDziecko != null && w.praweDziecko == null)
-            {
-                ReplaceNode(w, w.leweDziecko);
-            }
-            else if (w.leweDziecko == null && w.praweDziecko != null)
-            {
-                ReplaceNode(w, w.praweDziecko);
-            }
-            else
-            {
-                Wezel3 nastepnik = Nastepnik(w);
-                w.wartosc = nastepnik.wartosc;
-                Usun(nastepnik);
-            }
-
-            iloscWezlow--;
             return w;
         }
 
-        private void ReplaceNode(Wezel3 toReplace, Wezel3 replacement)
+        private Wezel3 UsunGdy2(Wezel3 w)
         {
-            replacement.rodzic = toReplace.rodzic;
-
-            if (toReplace.rodzic == null)
-            {
-                korzen = replacement;
-            }
-            else if (toReplace.rodzic.leweDziecko == toReplace)
-            {
-                toReplace.rodzic.leweDziecko = replacement;
-            }
-            else
-            {
-                toReplace.rodzic.praweDziecko = replacement;
-            }
+            var zamiennik = this.Nastepnik(w);
+            zamiennik = this.Usun(zamiennik);
         }
 
+        private Wezel3 UsunGdy1(Wezel3 w)
+        {
+            Wezel3 dziecko = null;
+            if(w.leweDziecko != null)
+            {
+                dziecko = w.leweDziecko;
+                w.leweDziecko = null;
+            }else
+            {
+                dziecko = w.praweDziecko;
+                w.praweDziecko = null;
+            }
+            dziecko.rodzic = w.rodzic;
+
+            if (w.rodzic == null)
+                this.korzen = dziecko;
+            else
+            {
+                if (w.rodzic.leweDziecko == w)
+                    w.rodzic.leweDziecko = dziecko;
+                else
+                    w.rodzic.praweDziecko = dziecko;
+            }
+            w.rodzic = null;
+            return w;
+        }
+
+        private Wezel3 UsunGdy0(Wezel3 w)
+        {
+            if(w.rodzic == null)
+            {
+                this.korzen = null;
+                return w;
+            }
+
+            if (w.rodzic.leweDziecko == w)
+                w.rodzic.leweDziecko = null;
+            else
+                w.rodzic.praweDziecko = null;
+
+            w.rodzic = null;
+            return w;
+        }
     }
 }
